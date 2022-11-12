@@ -1,0 +1,14 @@
+components:
+  securitySchemes:
+    ApiKey:
+      type: apiKey
+      name: api_key
+      in: header
+    UserAuth:
+      type: oauth2
+      flows: 
+        implicit:
+          authorizationUrl: https://fuze.finance/api/v1/oauth/authorize
+          scopes:
+            read:users: read users
+            write:users: modify users
