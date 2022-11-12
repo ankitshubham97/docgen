@@ -6,15 +6,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Fuze Docs Demo",
+  tagline: "Fuze is cool",
+  url: "https://fuze.finance",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "fuze-finance", // Usually your GitHub org/user name.
+  projectName: "fuze-api", // Usually your repo name.
 
   presets: [
     [
@@ -44,22 +44,21 @@ const config = {
     /** @type {import('docusaurus-preset-openapi').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/logo.png",
         },
         items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Tutorial",
-          },
+          // {
+          //   type: "doc",
+          //   docId: "intro",
+          //   position: "left",
+          //   label: "Tutorial",
+          // },
           { to: "/api", label: "API", position: "left" },
-          { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/ankitshubham97/docgen",
             label: "GitHub",
             position: "right",
           },
@@ -69,11 +68,11 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "API",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "API",
+                to: "/api",
               },
             ],
           },
@@ -103,7 +102,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/ankitshubham97/docgen",
               },
             ],
           },
